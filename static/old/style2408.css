@@ -1,0 +1,78 @@
+/* Style général : fond noir, texte vert, image en arrière-plan */
+body {
+ 
+background-color: #000;
+  background-image: url("/static/background.jpg");
+  background-size: 100% 100%; /* L'image remplit toute la fenêtre */
+  background-repeat: no-repeat;
+  background-position: center top;
+  color: #00ff00;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0; /* Supprime les marges pour un ajustement parfait */
+  height: 100vh; /* Hauteur de la fenêtre */
+}
+
+
+/* Titre principal */
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #00ff00;
+  text-shadow: 0 0 5px #00ff00;
+}
+
+/* Section du menu déroulant et bouton */
+#menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+/* Champs et boutons */
+select, input, button {
+  background-color: #000;
+  color: #00ff00;
+  border: 1px solid #00ff00;
+  padding: 8px;
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #003300;
+}
+
+/* Zone d'affichage de la clé */
+#result {
+  margin-bottom: 20px;
+}
+
+#keyOutput {
+  width: 200px;
+  font-weight: bold;
+}
+
+/* Tableau des données */
+/*table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+th, td {
+  border: 1px solid #00ff00;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #003300;
+} */
+

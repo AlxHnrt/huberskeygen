@@ -1,0 +1,104 @@
+/* Style général : fond noir, texte vert, image en arrière-plan */
+body {
+ 
+background-color: #000;
+  background-image: url("/static/background.jpg");
+  background-size: 100% 100%; /* L'image remplit toute la fenêtre */
+  background-repeat: no-repeat;
+  background-position: center top;
+  color: #00ff00;
+  font-size: 16px;
+  font-family: 'Fixedsys Excelsior 3.01', monospace;
+  font-weight: bold;
+  margin: 0; /* Supprime les marges pour un ajustement parfait */
+  height: 100vh; /* Hauteur de la fenêtre */
+}
+
+
+/* Titre principal */
+h1 {
+  position: absolute;
+  top: 57%; /* Ajuste la hauteur verticale */
+  left: 53%; /* Centre horizontalement */
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column; /* Empile verticalement */
+  align-items: center;
+  gap: 15px;
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #00ff00;
+  text-shadow: 0 0 1px #00ff00;
+}
+
+/* Section du menu déroulant et bouton */
+#menu {
+  
+position: absolute;
+  top: 65%; /* Ajuste la hauteur verticale */
+  left: 20%; /* Centre horizontalement */
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column; /* Empile verticalement */
+  align-items: center;
+  gap: 15px;
+
+}
+
+label {
+  font-family: 'Fixedsys Excelsior 3.01', monospace;
+  font-weight: bold;
+}
+
+/* Champs et boutons */
+select, input, button {
+  background-color: #000;
+  color: #00ff00;
+  border: 3px solid #00ff00;
+  padding: 16px;
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #003300;
+}
+
+/* Zone d'affichage de la clé */
+#result {
+position: absolute;
+  top: 60%; /* Ajuste la hauteur verticale */
+  left: 70%; /* Centre horizontalement */
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column; /* Empile verticalement */
+  align-items: center;
+  gap: 15px;
+}
+
+#keyOutput {
+  width: 200px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/* Tableau des données */
+/*table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+th, td {
+  border: 1px solid #00ff00;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #003300;
+} */
+

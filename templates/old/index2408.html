@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Super User Hubers</title>
+
+  <!-- Lien vers le fichier CSS pour le style -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <!-- Titre principal -->
+  <h1>KEYGEN</h1>
+
+  <!-- Menu déroulant pour choisir une date JJ/MM -->
+  <section id="menu">
+    <label for="dateSelect">Choisir une date (JJ/MM) :</label>
+    <select id="dateSelect">
+      <option value="">-- Sélectionner --</option>
+      <!-- Les options seront ajoutées dynamiquement par script.js -->
+    </select>
+    <!-- Bouton pour générer la clé -->
+    <button onclick="generateKey()">Generate Key</button>
+  </section>
+
+  <!-- Zone d'affichage de la clé générée -->
+  <section id="result">
+    <label for="keyOutput">Clé générée :</label>
+    <input type="text" id="keyOutput" readonly>
+  </section>
+
+  <!-- Tableau pour afficher toutes les données -->
+  <section id="table">
+<!--
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Clé</th>
+        </tr>
+      </thead>
+      <tbody id="dataBody">
+        <!-- Les lignes seront insérées dynamiquement par script.js -->
+      </tbody>
+    </table>
+-->
+  </section>
+
+  <!-- Lien vers le fichier JavaScript pour les interactions -->
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
